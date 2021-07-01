@@ -45,17 +45,17 @@ body{
     footer{
       background-color:#DDC9B4;
     }
-    .makeUppercase{
+    .uppercase{
       text-transform: uppercase;
     }
-    .makeLowercase{
+    .lowercase{
       text-transform: lowercase;
     }
     .underline{
       text-decoration: underline;
     }
-    .writingMode{
-      writing-mode: horizontal-tb|vertical-rl|vertical-lr;
+    .bold{
+      font-weight: bold;
     }
     img{
       width:100%
@@ -90,3 +90,20 @@ body{
       opacity: 0.8;
       text-decoration: underline
     }
+    .button:active{
+      color: #0B5F75;
+    }
+    .button.contact{
+      background-color: transparent;
+      color: #1196A0;
+      text-transform: uppercase;
+      border: 2px solid #1196A0;
+      }
+    .button.contact:hover,
+    .button.contact:focus{
+      background-color: #0B5F75;
+      color: #F2F2ED;
+      }
+      .button.contact:active{
+        color: #1196A0
+      }
