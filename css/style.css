@@ -8,7 +8,9 @@ Blue Sapphire (Dark) #0B5F75, RGB 11,95,117;
 */
 
 
-
+*{
+  box-sizing: border-box;
+}
 body{
   background-color:#F2F2ED;
   font-family: 'Quicksand', sans-serif;
@@ -20,8 +22,10 @@ body{
     header{
       background-color:#DDC9B4;
       opacity:0.8;
-      padding: 10px;
-      margin: 10px;
+      padding: 5px 0;
+      margin: 5px;
+      border-bottom: 3px solid #1196A0;
+      text-align: center;
     }
     h1,h2,h3,h4{
       line-height:1.4;
@@ -59,6 +63,9 @@ body{
     }
     img{
       width:100%
+    }
+    .container{
+      max-width: 1200px;
     }
     a{
       color:#1196A0;
@@ -107,3 +114,33 @@ body{
       .button.contact:active{
         color: #1196A0
       }
+/* Layout styling */
+.container{
+  padding: 0 15px;
+}
+.row{
+  margin: 25px 0;
+}
+#projects .row{
+  padding-bottom: 25px;
+  border-bottom: 3px solid #1196A0
+}
+#hero h1{
+  text-align: center;
+}
+.logo{
+  max-width: 80px;
+}
+nav > ul{
+  list-style-type: none;
+  padding:0;
+}
+nav > ul > li{
+  display: inline-block;
+  }
+nav > ul > li> a{
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #1196A0;
+}
