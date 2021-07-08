@@ -31,12 +31,24 @@
   <main>
     <div id="hero">
       <div class="container">
-        <h1 class="">
+        <h1 class="wordCarousel">
           <span>I am|</span>
         </h1>
       </div>
       <div class="container">
-        <p>My name is Trevor, I have several years of experience in physical product design. During which I have conducted plenty of research, testing, and prototyping. I am passionate about problem-solving and innovating.</p>
+        <h2>
+        <ul class="flip4">
+          <li class="wc li">A UX Designer</li>
+          <li class="wc li">A UI Designer</li>
+          <li class="wc li">A Product Designer</li>
+          <li class="wc li">XID Designs</li>
+        </ul>
+      </div>
+      </h2>
+      </div>
+
+      <div class="container">
+        <p>I have several years of experience in physical product design. During which I have conducted plenty of research, testing, and prototyping. I am passionate about problem-solving and innovating.</p>
       </div>
     </div>
     <div id="projects">
@@ -85,8 +97,8 @@
       <div>
         <ul>
           <li>
-            <a class:"icon" href="https://www.linkedin.com/in/xid-design-trevor-dix/" target="_blank">
-              <svg enable-background="new 0 0 56.693 56.693" height="36px" id="Layer_2" version="1.1" viewBox="0 0 56.693 56.693" width="36px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <a href="https://www.linkedin.com/in/xid-design-trevor-dix/" target="_blank">
+              <svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_2" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g>
                   <path
                     d="M28.347,5.155c-13.6,0-24.625,11.025-24.625,24.625c0,13.602,11.025,24.625,24.625,24.625   c13.598,0,24.623-11.023,24.623-24.625C52.97,16.181,41.944,5.155,28.347,5.155z M42.062,41.741c0,1.096-0.91,1.982-2.031,1.982   H16.613c-1.123,0-2.031-0.887-2.031-1.982V18.052c0-1.094,0.908-1.982,2.031-1.982H40.03c1.121,0,2.031,0.889,2.031,1.982V41.741z" />
@@ -99,8 +111,8 @@
             </a>
           </li>
           <li>
-            <a class:"icon" href="https://www.behance.net/trevordix" target="_blank">
-              <svg enable-background="new 0 0 56.693 56.693" height="36px" id="Layer_3" version="1.1" viewBox="0 0 56.693 56.693" width="36px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <a href="https://www.behance.net/trevordix" target="_blank">
+              <svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_3" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g>
                   <path d="M38.031,27.257c-3.174,0-3.615,3.168-3.615,3.168h6.748C41.164,30.425,41.207,27.257,38.031,27.257z" />
                   <path d="M22.721,30.425h-5.982v5.492h5.296c0.09,0,0.225,0.002,0.383,0c0.852-0.02,2.467-0.268,2.467-2.67   C24.885,30.396,22.721,30.425,22.721,30.425z" />
