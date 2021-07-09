@@ -173,3 +173,37 @@ nav > ul > li> a:active{
   display: inline-block;
   width: 100%;
 }
+.imgcontain{
+  position: relative;
+  width: 100%;
+}
+.imgol{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .8s ease;
+  background-color: #0B5F75;
+  border-radius: 2%;
+}
+.imgcontain:hover .overlay{
+  opacity: .8;
+}
+.oltext{
+  color: #F2F2ED;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
