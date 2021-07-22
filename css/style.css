@@ -31,7 +31,7 @@ body{
       position: relative;
     }
     h1,h2,h3,h4{
-      line-height:1.4;
+      line-height:1.0;
     }
     h1{
        font-family: 'Benne', serif;
@@ -40,6 +40,8 @@ body{
     h2{
        font-family: 'Reenie Beanie', cursive;
        font-size: 1.563em;
+       text-decoration: underline;
+       text-decoration-color: #1196A0;
     }
     h3{
       font-family: 'Benne', serif;
@@ -73,8 +75,30 @@ body{
     }
     .container{
       max-width: 1200px;
+      padding: 0 15px;
     }
-    .button {
+    section{
+      margin-bottom: 80px;
+    }
+    .stage{
+      text-transform: uppercase;
+      text-decoration: underline;
+      text-decoration-color: #1196A0;
+      writing-mode: vertical-rl;
+      position: absolute;
+      display: inline;
+      color: #0B5F75;
+      margin-top: 40px;
+      margin-left: 10px;
+      letter-spacing: 2px;
+
+    }
+    .flex-container{
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 50px;
+    }
+      .button {
       display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
       background-color: #1196A0;
       color: #F2F2ED; /* needed to override the default link color */
@@ -108,9 +132,6 @@ body{
         color: #1196A0
       }
 /* Layout styling */
-.container{
-  padding: 0 15px;
-}
 .row{
   margin: 25px 0;
 }
@@ -138,6 +159,7 @@ nav > ul > li> a{
   padding: 14px 10px;
   border-radius: 3px;
   text-transform: uppercase;
+  text-decoration: none;
   font-weight: 600;
   color: #1196A0;
   display: block;
@@ -145,6 +167,7 @@ nav > ul > li> a{
 }
 nav > ul > li> a:visited{
   background-color: #1196A0;
+  color: #F2F2ED;
 }
 nav > ul > li> a:focus,a:hover:not(.active){
   background-color: #707070;
@@ -173,7 +196,7 @@ nav > ul > li> a:active{
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 2%;
+  border-radius: 15px;
 }
 .overlay{
   position: absolute;
@@ -186,7 +209,7 @@ nav > ul > li> a:active{
   opacity: 0;
   transition: .8s ease;
   background-color: #0B5F75;
-  border-radius: 2%;
+  border-radius: 15px;
 }
 .imgcontain:hover .overlay{
   opacity: .8;
@@ -229,3 +252,83 @@ a:active{
   max-width: 40%;
   margin: 15px;
 }
+.mufloatr{
+  float: right;
+}
+.rolesandtools{
+  background-color: #1196A0;
+  display: inline-block;
+  color: #F2F2ED;
+  padding: 5px;
+  margin-left: 50px;
+  border-radius: 5px;
+}
+.mbl{
+  float: left;
+  max-width: 50%;
+}
+.mbr{
+  float: right;
+  max-width: 50%;
+}
+.designprocess{
+  column-count: 3;
+  column-gap: 10%;
+  column-rule-style:solid;
+  column-rule-width: 3px;
+  column-rule-color: #1196A0;
+  margin-top: 10px;
+  margin-left: 80px;
+  font-size: fill;
+}
+.designprocess > ul{
+  list-style-type:none;
+}
+/* Word Carousel */
+
+.wordCarousel {
+    font-size: 36px;
+    font-weight: 100;
+    color: #707070;
+  }
+.wordCarousel >div {
+    overflow: hidden;
+    position: relative;
+    float: right;
+    height: 65px;
+    padding-top: 10px;
+    margin-top: -10px;
+  }
+.wordCarousel >ul{
+    list-style-type: none;
+    padding-left: 0px;
+  }
+.wordCarousel > ul > li {
+    font-family: 'Reenie Beanie', cursive;
+    color: #1196a0;
+    font-weight: 700;
+    padding: 0 10px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: block;
+  }
+.flip4 {
+  animation: flip4 15s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  }
+
+@keyframes flip4 {
+    0% { margin-top: -360px; }
+    5% { margin-top: -270px; }
+    25% { margin-top: -270px; }
+    30% { margin-top: -180px; }
+    50% { margin-top: -180px; }
+    55% { margin-top: -90px; }
+    75% { margin-top: -90px; }
+    80% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+
+
+/* Spotter Styling */
