@@ -42,6 +42,7 @@ body{
        font-size: 1.563em;
        text-decoration: underline;
        text-decoration-color: #1196A0;
+       white-space: nowrap;
     }
     h3{
       font-family: 'Benne', serif;
@@ -77,8 +78,13 @@ body{
       max-width: 1200px;
       padding: 0 15px;
     }
+    .contents{
+      max-width: inherit;
+      margin: auto;
+      padding: 0 5%;
+    }
     section{
-      margin-bottom: 80px;
+      margin-bottom: 40%;
     }
     .stage{
       text-transform: uppercase;
@@ -86,10 +92,11 @@ body{
       text-decoration-color: #1196A0;
       writing-mode: vertical-rl;
       position: absolute;
-      display: inline;
+      margin-top: 10px;
+      margin-left: -20px;
+      white-space: nowrap;
       color: #0B5F75;
-      margin-top: 40px;
-      margin-left: 10px;
+
       letter-spacing: 2px;
 
     }
@@ -121,7 +128,8 @@ body{
       color: #1196A0;
       text-transform: uppercase;
       border: 2px solid #1196A0;
-      vertical-align: middle;
+      vertical-align: baseline;
+      text-align: center;
       }
     .button.contact:hover,
     .button.contact:focus{
@@ -252,15 +260,15 @@ a:active{
   max-width: 40%;
   margin: 15px;
 }
-.mufloatr{
+.floatR{
   float: right;
-}
+  }
 .rolesandtools{
   background-color: #1196A0;
   display: inline-block;
   color: #F2F2ED;
-  padding: 5px;
-  margin-left: 50px;
+  padding: 2%;
+  margin: 0 5%;
   border-radius: 5px;
 }
 .mbl{
@@ -273,23 +281,39 @@ a:active{
 }
 .designprocess{
   column-count: 3;
-  column-gap: 10%;
+  column-gap: 2%;
   column-rule-style:solid;
   column-rule-width: 3px;
   column-rule-color: #1196A0;
   margin-top: 10px;
-  margin-left: 80px;
-  font-size: fill;
-}
+  font-size: 80%;
+  }
 .designprocess > ul{
   list-style-type:none;
 }
+div.gallery{
+  margin: 5px;
+  border: 1px solid #707070;
+  float: left;
+  width: 180px;
+}
+div.gallery:hover{
+  border: 2px solid #1196A0;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
 /* Word Carousel */
-
 .wordCarousel {
     font-size: 36px;
     font-weight: 100;
     color: #707070;
+    position: absolute;
   }
 .wordCarousel >div {
     overflow: hidden;
@@ -298,6 +322,7 @@ a:active{
     height: 65px;
     padding-top: 10px;
     margin-top: -10px;
+    text-align: left;
   }
 .wordCarousel >ul{
     list-style-type: none;
@@ -311,7 +336,7 @@ a:active{
     height: 45px;
     margin-bottom: 45px;
     display: block;
-  }
+    }
 .flip4 {
   animation: flip4 15s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
   }
@@ -328,7 +353,3 @@ a:active{
     99.99% { margin-top: 0px; }
     100% { margin-top: -270px; }
 }
-
-
-
-/* Spotter Styling */
